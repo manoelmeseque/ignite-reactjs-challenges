@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { api } from "../services/api";
 import { Button } from "./Button"
+import '../styles/sidebar.scss';
 
 interface GenreResponseProps {
   id: number;
@@ -9,8 +10,8 @@ interface GenreResponseProps {
 }
 
 interface SiderBarProps{
-  selectedGenreId: number
-  setSelectedGenreId: (id: number) => void
+  selectedGenreId: number;
+  setSelectedGenreId: (id: number) => void;
 }
 
 export function SideBar({ selectedGenreId, setSelectedGenreId }: SiderBarProps) {
